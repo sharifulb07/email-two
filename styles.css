@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Ubuntu+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Ubuntu+Mono:wght@400;700&display=swap");
+
+:root {
+  --bg: white;
+  --bgBlack: black;
+  --primary: #cc6b2d;
+  --secondary: #cc2d2d;
+
+  --second-font: "Ubuntu Mono";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 1440px;
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Poppins";
+  overflow-x: hidden;
+  background-color: #b69f9f;
+}
+
+.container {
+  width: 600px;
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: var(--bg);
+  position: relative;
+  padding: 20px 0px;
+  border-radius: 10px;
+}
+
+.container h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.container h4 span {
+  color: var(--secondary);
+}
+
+.container h2 {
+  color: var(--primary);
+  font-size: 30px;
+}
+.container h1 {
+  font-size: 100px;
+  font-weight: 500;
+}
+
+.container .cake {
+  position: absolute;
+  top: 120px;
+  left: 25%;
+  z-index: 5;
+}
+
+.news {
+  width: 600px;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
+  background-color: var(--bgBlack);
+  padding-top: 300px;
+  padding-bottom: 200px;
+  margin-top: -50px;
+  z-index: 1;
+}
+
+.news h3 {
+  color: var(--bg);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.news p {
+  color: var(--bg);
+  padding: 40px;
+  font-size: 20px;
+}
+
+.news .off {
+  padding: 3px;
+  background-color: var(--bg);
+  color: var(--primary);
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.btn {
+  padding: 20px 60px;
+  font-size: 30px;
+  text-transform: uppercase;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--primary);
+  width: 80%;
+}
+
+.btn a {
+  text-decoration: none;
+  color: var(--bg);
+  font-weight: 500;
+}
+
+.news h5 {
+  color: var(--bg);
+  font-size: 35px;
+  margin-top: 50px;
+}
+
+.news .products {
+  color: var(--primary);
+}
+
+.biscuit {
+  object-fit: cover;
+  box-shadow: 50px 50px 10px solid rgb(253, 253, 253);
+}
+
+.news .paket {
+  font-size: 25px;
+  font-weight: 500;
+  padding-bottom: 300px;
+}
+
+.news .offer {
+  color: var(--primary);
+}
+
+.cookies {
+  position: relative;
+  margin-top: -400px;
+  z-index: 10;
+  width: 600px;
+  height: auto;
+  margin-bottom: 40px;
+}
+.cookie {
+  width: 400px;
+  height: auto;
+}
+
+.coco {
+  height: 100px;
+}
+
+.coco h5 {
+  color: var(--bgBlack);
+  font-weight: 500;
+  font-size: 25px;
+}
+.coco .price {
+  color: var(--secondary);
+}
+
+.bottle {
+  margin-bottom: -300px;
+  z-index: 30;
+  position: relative;
+  box-shadow: 10px 10px solid whitesmoke;
+}
+.bottles {
+  background-color: var(--bgBlack);
+  margin-top: 100px;
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+  height: max-content;
+}
+
+.two-bottle {
+  padding-top: 250px;
+}
+
+.two-bottle h5 {
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--bg);
+}
+
+.price-bottle {
+  color: var(--primary);
+}
+
+.btn-products {
+  margin: 30px 0px;
+}
+
+.customer {
+  font-size: 30px;
+  color: var(--bg);
+  margin-top: 30px;
+}
+.review {
+  font-size: 30px;
+  color: var(--primary);
+}
+
+.reviews {
+  display: flex;
+  align-items: center;
+  color: var(--bg);
+}
+
+.person {
+  width: 50%;
+}
+.name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.fa-star:nth-child(-n + 4) {
+  color: var(--primary);
+}
+
+.text {
+  padding: 0px 10px;
+}
+
+.photos {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 40px;
+  position: relative;
+  gap: 5px;
+  width: 50%;
+}
+
+.photo1,
+.photo2 {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 20px;
+  position: absolute;
+}
+
+.photo1 {
+  transform: rotate(-45deg);
+  margin-right: 120px;
+}
+.photo2 {
+  transform: rotate(-45deg);
+  margin-top: -10px;
+}
+
+.footer {
+  height: 300px;
+  clip-path: polygon(
+    53% 53%,
+    72% 45%,
+    87% 36%,
+    100% 25%,
+    100% 100%,
+    50% 100%,
+    0 100%,
+    0 43%,
+    14% 51%,
+    32% 55%
+  );
+  border-top: 1px solid white;
+  background-color: var(--secondary);
+  position: relative;
+  z-index: 100;
+  margin-top: -100px;
+  padding-bottom: 20px;
+}
+
+.footer p {
+  color: gray;
+  text-shadow: 2px solid whitesmoke;
+  font-size: 30px;
+  text-transform: uppercase;
+  z-index: 200;
+  position: absolute;
+  bottom: 10px;
+  left: 30%;
+}
+
+.socials {
+  margin-top: 20px;
+  justify-content: baseline;
+  align-items: center;
+  background-color: var(--bgBlack);
+}
+.socials a {
+  margin: 0 auto;
+  margin-left: 20px;
+
+}
+
+.socials i{
+    color: var(--bg);
+}
